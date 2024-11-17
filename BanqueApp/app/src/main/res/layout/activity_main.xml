@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#000000">
+
+    <!-- Bouton pour ajouter un compte -->
+    <Button
+        android:id="@+id/btn_add_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+    android:backgroundTint="#8000FF"
+    android:text="ADD NEW ACCOUNT"
+    android:textColor="#FFFFFF"
+    android:textStyle="bold" />
+
+
+    <!-- RecyclerView pour la liste des comptes -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:scrollbars="vertical" />
+
+    <!-- Spinner pour sélectionner JSON/XML -->
+    <Spinner
+        android:id="@+id/format_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/format_options"
+        android:layout_gravity="center_horizontal"
+        android:background="#FFFFFF"
+        android:padding="8dp" />
+</LinearLayout>

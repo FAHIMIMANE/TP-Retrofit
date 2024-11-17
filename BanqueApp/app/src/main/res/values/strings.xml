@@ -1,0 +1,13 @@
+<resources>
+    <string-array name="format_options">
+        <item>JSON</item>
+        <item>XML</item>
+    </string-array>
+    <string-array name="account_types">
+        <item>COURANT</item>
+        <item>EPARGNE</item>
+
+    </string-array>
+    <string name="delete_button">Delete Account</string><string name="update_button">Delete Account</string>
+
+</resources>
